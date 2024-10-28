@@ -4,7 +4,7 @@
 
 - [x] Zimony - Money Management Dashboard UI Kit
   - source: <https://shaynakit.com/details/zimony-money-management-dashboard>
-- [ ] Kreatop - Dashboard Dark Mode Green V1 Website Design
+- [x] Kreatop - Dashboard Dark Mode Green V1 Website Design
   - source: <https://shaynakit.com/details/kreatop-dashboard-dark-mode-green-v1-website-design>
 - [ ] Pastilaris - SaaS Website Design
   - source: <https://shaynakit.com/details/pastilaris-saas-website-design>

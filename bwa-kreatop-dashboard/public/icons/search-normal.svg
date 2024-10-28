@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect width="24" height="24" />
+    <g id="vuesax/linear/search-normal" transform="translate(1 1)">
+      <g id="search-normal">
+        <path id="Vector" d="M10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0L10.5 0ZM2 10.5C2 5.80558 5.80558 2 10.5 2C15.1944 2 19 5.80558 19 10.5C19 15.1944 15.1944 19 10.5 19C5.80558 19 2 15.1944 2 10.5L2 10.5Z" fill="#FFFFFF" fill-rule="evenodd" />
+        <path id="Vector" d="M1.70711 0.292892C1.31658 -0.0976315 0.683416 -0.0976315 0.292892 0.292892C-0.0976315 0.683416 -0.0976315 1.31658 0.292892 1.70711L2.29289 3.70711C2.68342 4.09763 3.31658 4.09763 3.70711 3.70711C4.09763 3.31658 4.09763 2.68342 3.70711 2.29289L1.70711 0.292892L1.70711 0.292892Z" fill="#FFFFFF" fill-rule="evenodd" transform="translate(18 18)" />
+      </g>
+    </g>
+  </g>
+</svg>

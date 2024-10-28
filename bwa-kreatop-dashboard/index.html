@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keratop - Dashbard Dark Mode Green V1</title>
+  </head>
+
+  <body class="flex h-screen flex-col">
+    <div id="app" class="container flex flex-1 overflow-auto">
+      <aside
+        class="no-scrollbar space-y-5 overflow-auto border-r bg-secondary p-5 md:w-fit"
+      >
+        <div class="py-5 md:p-5">
+          <img
+            src="/logo.svg"
+            class="hidden h-full w-full md:flex"
+            alt="logo"
+          />
+          <img
+            src="/logos.svg"
+            class="flex h-full w-full md:hidden"
+            alt="logos"
+          />
+        </div>
+        <ul class="space-y-5">
+          <li>
+            <a
+              href="/overview"
+              class="flex gap-3 rounded-3xl bg-primary px-3 py-2 font-medium text-background"
+            >
+              <img src="/icons/grid-5.svg" alt="icon-grid-5" />
+              <span class="hidden md:flex">Overview</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/messages"
+              class="flex items-center gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/messages-2.svg" alt="icon-messages-2" />
+              <span class="hidden md:flex">Messages</span>
+              <span
+                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground md:flex"
+                >9</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/clients"
+              class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/profile-2user.svg" alt="icon-profile-2user" />
+              <span class="hidden md:flex">Clients</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/clients"
+              class="flex items-center gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/menu-board.svg" alt="icon-menu-board" />
+              <span class="hidden md:flex">Content Planner</span>
+              <span
+                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground md:flex"
+                >New</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="/bot-analytics"
+              class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/chart-2.svg" alt="icon-chart-2" />
+              <span class="hidden md:flex">Bot Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/testimonials"
+              class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/star.svg" alt="icon-star" />
+              <span class="hidden md:flex">Testimonials</span>
+            </a>
+          </li>
+          <li class="border-b"></li>
+          <li>
+            <a
+              href="/settings"
+              class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/setting-2.svg" alt="icon-setting-2" />
+              <span class="hidden md:flex">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/logout"
+              class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
+            >
+              <img src="/icons/logout.svg" alt="icon-logout" />
+              <span class="hidden md:flex">Logout</span>
+            </a>
+          </li>
+        </ul>
+        <div
+          class="hidden space-y-5 rounded-xl border bg-secondary p-5 md:block"
+        >
+          <div class="w-fit rounded-full bg-primary p-3">
+            <img src="/icons/code.svg" alt="icon-code" />
+          </div>
+          <h3 class="text-lg font-bold">Creto AI Ready to Help Your Grow.</h3>
+          <button
+            class="w-full rounded-3xl bg-primary px-3 py-2.5 text-sm font-bold text-background"
+          >
+            Upgrade Now
+          </button>
+        </div>
+      </aside>
+
+      <div class="flex w-full flex-1 flex-col overflow-auto">
+        <div
+          class="sticky top-0 z-50 flex items-center justify-between bg-background px-5 py-3 md:p-5"
+        >
+          <div class="space-y-1">
+            <h1 class="text-3xl font-bold">Overview</h1>
+            <p class="hidden text-muted md:block">
+              Growth reporting of your account
+            </p>
+          </div>
+          <div class="flex items-center gap-3 divide-x">
+            <div class="flex items-center gap-4 px-5">
+              <button
+                class="rounded-full border px-3 py-3 text-sm font-bold hover:bg-secondary"
+              >
+                <img
+                  src="/icons/search-normal.svg"
+                  class="h-full w-full"
+                  alt="icon-search-normal"
+                />
+              </button>
+              <button
+                class="rounded-full border px-3 py-3 text-sm font-bold hover:bg-secondary"
+              >
+                <img
+                  src="/icons/notification.svg"
+                  class="h-full w-full"
+                  alt="icon-notification"
+                />
+              </button>
+            </div>
+            <div class="flex items-center gap-3 px-5 text-right">
+              <div class="hidden flex-col md:flex">
+                <p class="font-bold">Shayna</p>
+                <span class="text-sm text-muted">Beauty Reviewer</span>
+              </div>
+              <div class="rounded-full border-2 p-1.5">
+                <div class="h-12 w-12 overflow-hidden rounded-full">
+                  <img src="/avatar.jpg" class="h-full w-full" alt="avatar" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-1 p-5">
+          <div class="flex w-full flex-col gap-5 xl:flex-row">
+            <div class="flex-1 space-y-5">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-bold">Latest Statistics</h3>
+                <button
+                  class="flex items-center gap-5 rounded-xl border px-3 py-2 text-sm font-bold hover:bg-secondary"
+                >
+                  Last 13 Days
+                  <img src="/icons/arrow-down.svg" alt="icon-arrow-down" />
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 gap-5 xl:grid-cols-3">
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-info p-3">
+                      <img
+                        src="/icons/video-circle.svg"
+                        alt="icon-video-circle"
+                      />
+                    </span>
+                    <p class="text-lg font-bold">Reach</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">299,039</b></p>
+                    <span
+                      class="rounded-2xl bg-red-200 p-1 px-2 text-xs font-medium text-danger"
+                      >-10%</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-blue-800 p-3">
+                      <img src="/icons/share.svg" alt="icon-share" />
+                    </span>
+                    <p class="text-lg font-bold">Share</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">89,773</b></p>
+                    <span
+                      class="rounded-2xl bg-red-200 p-1 px-2 text-xs font-medium text-danger"
+                      >-3%</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-danger p-3">
+                      <img src="/icons/messages-2.svg" alt="icon-messages-2" />
+                    </span>
+                    <p class="text-lg font-bold">Inbox</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">18,221</b></p>
+                    <span
+                      class="rounded-2xl bg-blue-200 p-1 px-2 text-xs font-medium text-green-800"
+                      >+11%</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-danger p-3">
+                      <img src="/icons/cards.svg" alt="icon-cards" />
+                    </span>
+                    <p class="text-lg font-bold">Revenue</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">69,000</b></p>
+                    <span
+                      class="rounded-2xl bg-blue-200 p-1 px-2 text-xs font-medium text-green-800"
+                      >+25%</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-purple-600 p-3">
+                      <img src="/icons/note.svg" alt="icon-note" />
+                    </span>
+                    <p class="text-lg font-bold">Invoice</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">48,882</b></p>
+                    <span
+                      class="rounded-2xl bg-red-200 p-1 px-2 text-xs font-medium text-red-800"
+                      >-8%</span
+                    >
+                  </div>
+                </div>
+                <div class="space-y-5 rounded-2xl border bg-secondary p-5">
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-danger p-3">
+                      <img
+                        src="/icons/profile-2user.svg"
+                        alt="icon-profile-2user"
+                      />
+                    </span>
+                    <p class="text-lg font-bold">New Clients</p>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p><b class="text-3xl font-bold">22,089</b></p>
+                    <span
+                      class="rounded-2xl bg-blue-200 p-1 px-2 text-xs font-medium text-green-800"
+                      >+5%</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-bold">Account Growth</h3>
+                <button
+                  class="flex items-center gap-5 rounded-xl border px-3 py-2 text-sm font-bold hover:bg-secondary"
+                >
+                  Lifetime
+                  <img src="/icons/arrow-down.svg" alt="icon-arrow-down" />
+                </button>
+              </div>
+              <div>
+                <div class="flex items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="flex h-3 w-3 rounded-full bg-purple-600"
+                    ></span>
+                    <p class="font-medium">Growth</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="flex h-3 w-3 rounded-full bg-success"></span>
+                    <p class="font-medium">Revenue</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="flex h-3 w-3 rounded-full bg-cyan-500"></span>
+                    <p class="font-medium">Clients</p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="/icons/chart.svg"
+                    class="h-full w-full"
+                    alt="icon-chart"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full bg-secondary xl:max-w-sm">
+              <div class="bg-secondary">
+                <div class="relative overflow-hidden p-5 pt-10">
+                  <img
+                    src="/icons/bg-lines.svg"
+                    class="absolute left-5 right-5 top-0 w-full"
+                    alt="bg-lines"
+                  />
+
+                  <div
+                    class="flex flex-col gap-5 rounded-2xl bg-primary p-5 text-background"
+                  >
+                    <div>
+                      <img src="/logo-35.svg" alt="logo-35" />
+                    </div>
+                    <div>
+                      <span class="text-sm">Balance</span>
+                      <h3 class="text-3xl font-bold">$22,281.24</h3>
+                    </div>
+                    <span class="text-sm">Shayna Lowni - 12/24</span>
+                  </div>
+                </div>
+
+                <div class="p-5">
+                  <div class="mb-2 flex items-center justify-between">
+                    <h3 class="text-lg font-bold">Top Big Clients</h3>
+                  </div>
+                  <div class="divide-y">
+                    <div class="flex items-center justify-between py-3">
+                      <div class="flex items-center gap-3">
+                        <div>
+                          <img src="/logo-bwa.svg" alt="logo-bwa" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="font-bold">$853,831</h3>
+                          <span class="text-sm font-medium text-muted"
+                            >BuildWithAngga, Inc</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="rounded-2xl bg-blue-200 p-1 px-2 text-xs font-medium text-green-800"
+                        >+25%</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between py-3">
+                      <div class="flex items-center gap-3">
+                        <div>
+                          <img src="/logo-gl.svg" alt="logo-bwa" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="font-bold">$124,831</h3>
+                          <span class="text-sm font-medium text-muted"
+                            >Gelombang, LLC</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="rounded-2xl bg-red-200 p-1 px-2 text-xs font-medium text-red-800"
+                        >-10%</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between py-3">
+                      <div class="flex items-center gap-3">
+                        <div>
+                          <img src="/logo-mkr.svg" alt="logo-bwa" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="font-bold">$78,667</h3>
+                          <span class="text-sm font-medium text-muted"
+                            >Mekaaary, Inc</span
+                          >
+                        </div>
+                      </div>
+                      <span
+                        class="rounded-2xl bg-green-200 p-1 px-2 text-xs font-medium text-green-800"
+                        >+55%</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-5">
+                  <div class="mb-2 flex items-center justify-between">
+                    <h3 class="text-lg font-bold">Revenue Drivers</h3>
+                  </div>
+                  <div class="divide-y">
+                    <div class="flex items-center justify-between py-3">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-800"
+                        >
+                          <img src="/icons/crown.svg" alt="icon-crown" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="font-bold">Brand Awareness</h3>
+                          <span class="text-sm font-medium text-muted"
+                            >14,408,112 Million Views</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between py-3">
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-800"
+                        >
+                          <img src="/icons/mobile.svg" alt="icon-mobile" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="font-bold">Software Promotions</h3>
+                          <span class="text-sm font-medium text-muted"
+                            >4,851,513 Million Views</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
