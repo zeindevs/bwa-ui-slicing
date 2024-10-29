@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BWA UI Slicing</title>
+  </head>
+  <body>
+    <div id="app" class="container flex h-screen flex-col overflow-auto">
+      <nav class="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950 p-5">
+        <h1
+          class="w-fit rounded bg-white px-3 py-2 text-xl font-bold text-zinc-950"
+        >
+          BWA UI Slicing
+        </h1>
+      </nav>
+      <ul class="grid gap-5 p-5 md:grid-cols-2 xl:grid-cols-3">
+        <li
+          class="flex overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 hover:border-white"
+        >
+          <button class="relative flex flex-1 flex-col">
+            <div class="relative flex-1">
+              <div
+                class="absolute bottom-0 left-0 right-0 top-0 flex items-center justify-center bg-zinc-900/80"
+              >
+                <span
+                  class="rounded-full bg-white/80 px-3 py-2 text-sm font-bold text-zinc-950"
+                  >Coming Soon</span
+                >
+              </div>
+              <img
+                src="/Pastilaris-SaaS-Landing.jpg"
+                class="aspect-[16/9]"
+                alt="Kreatop"
+              />
+            </div>
+            <div class="p-3">
+              <h3 class="text-lg font-bold">Pastilaris - SasS Landing</h3>
+            </div>
+          </button>
+        </li>
+        <li
+          class="flex overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 hover:border-yellow-500"
+        >
+          <a
+            href="/pages/kreatop/index.html"
+            class="flex flex-1 flex-col overflow-hidden hover:border-yellow-500"
+          >
+            <div class="relative flex-1">
+              <img
+                src="/Kreatop-Dashboard.jpg"
+                class="aspect-[16/9]"
+                alt="Kreatop"
+              />
+            </div>
+            <div class="p-3">
+              <h3 class="text-lg font-bold">Kreatop - Dashboard</h3>
+            </div>
+          </a>
+        </li>
+        <li
+          class="flex overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 hover:border-cyan-500"
+        >
+          <a
+            href="/pages/zimoney/index.html"
+            class="flex flex-1 flex-col overflow-hidden hover:border-teal-500"
+          >
+            <div class="relative flex-1">
+              <img
+                src="/Zimoney-Dashboard.jpg"
+                class="aspect-[16/9]"
+                alt="Kreatop"
+              />
+            </div>
+            <div class="p-3">
+              <h3 class="text-lg font-bold">Zimoney - Dashboard</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

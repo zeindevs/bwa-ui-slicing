@@ -1,5 +1,7 @@
 # BWA UI Slicing
 
+![Screenshot](./screenshot.jpg)
+
 ## Slicing List
 
 - [x] Zimony - Money Management Dashboard UI Kit
