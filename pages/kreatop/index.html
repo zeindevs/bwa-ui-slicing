@@ -10,17 +10,17 @@
   <body class="flex h-screen flex-col">
     <div id="app" class="container flex flex-1 overflow-auto">
       <aside
-        class="no-scrollbar w-fit max-w-xs space-y-5 overflow-auto border-r bg-secondary p-5"
+        class="no-scrollbar hidden w-fit max-w-xs flex-col space-y-5 overflow-auto border-r bg-secondary p-5 md:flex"
       >
-        <div class="h-24 py-5 md:p-5">
+        <div class="py-5 lg:h-24 lg:p-5">
           <img
             src="/kreatop/logo.svg"
-            class="hidden h-full w-full md:flex"
+            class="hidden h-full w-full lg:flex"
             alt="logo"
           />
           <img
             src="/kreatop/logos.svg"
-            class="flex h-full w-full md:hidden"
+            class="flex h-full w-full lg:hidden"
             alt="logos"
           />
         </div>
@@ -31,7 +31,7 @@
               class="flex gap-3 rounded-3xl bg-primary px-3 py-2 font-medium text-background"
             >
               <img src="/kreatop/icons/grid-5.svg" alt="icon-grid-5" />
-              <span class="hidden md:flex">Overview</span>
+              <span class="hidden lg:flex">Overview</span>
             </a>
           </li>
           <li>
@@ -40,9 +40,9 @@
               class="flex items-center gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/messages-2.svg" alt="icon-messages-2" />
-              <span class="hidden md:flex">Messages</span>
+              <span class="hidden lg:flex">Messages</span>
               <span
-                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground md:flex"
+                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground lg:flex"
                 >9</span
               >
             </a>
@@ -56,7 +56,7 @@
                 src="/kreatop/icons/profile-2user.svg"
                 alt="icon-profile-2user"
               />
-              <span class="hidden md:flex">Clients</span>
+              <span class="hidden lg:flex">Clients</span>
             </a>
           </li>
           <li>
@@ -65,9 +65,9 @@
               class="flex items-center gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/menu-board.svg" alt="icon-menu-board" />
-              <span class="hidden md:flex">Content Planner</span>
+              <span class="hidden lg:flex">Content Planner</span>
               <span
-                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground md:flex"
+                class="hidden h-fit rounded-full bg-info px-2 py-0.5 text-xs font-medium text-foreground lg:flex"
                 >New</span
               >
             </a>
@@ -78,7 +78,7 @@
               class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/chart-2.svg" alt="icon-chart-2" />
-              <span class="hidden md:flex">Bot Analytics</span>
+              <span class="hidden lg:flex">Bot Analytics</span>
             </a>
           </li>
           <li>
@@ -87,7 +87,7 @@
               class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/star.svg" alt="icon-star" />
-              <span class="hidden md:flex">Testimonials</span>
+              <span class="hidden lg:flex">Testimonials</span>
             </a>
           </li>
           <li class="border-b"></li>
@@ -97,7 +97,7 @@
               class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/setting-2.svg" alt="icon-setting-2" />
-              <span class="hidden md:flex">Settings</span>
+              <span class="hidden lg:flex">Settings</span>
             </a>
           </li>
           <li>
@@ -106,12 +106,12 @@
               class="flex gap-3 rounded-3xl px-3 py-2 font-medium text-foreground hover:bg-primary/10"
             >
               <img src="/kreatop/icons/logout.svg" alt="icon-logout" />
-              <span class="hidden md:flex">Logout</span>
+              <span class="hidden lg:flex">Logout</span>
             </a>
           </li>
         </ul>
         <div
-          class="hidden space-y-5 rounded-xl border bg-secondary p-5 md:flex flex-col"
+          class="hidden flex-col space-y-5 rounded-xl border bg-secondary p-5 lg:flex"
         >
           <div class="w-fit rounded-full bg-primary p-3">
             <img src="/kreatop/icons/code.svg" alt="icon-code" />
@@ -130,13 +130,13 @@
           class="sticky top-0 z-50 flex items-center justify-between bg-background px-5 py-3 md:p-5"
         >
           <div class="space-y-1">
-            <h1 class="text-3xl font-bold">Overview</h1>
-            <p class="hidden text-muted md:block">
+            <h1 class="text-2xl font-bold md:text-3xl">Overview</h1>
+            <p class="hidden text-muted lg:block">
               Growth reporting of your account
             </p>
           </div>
           <div class="flex items-center gap-3 divide-x">
-            <div class="flex items-center gap-4 px-5">
+            <div class="hidden items-center gap-4 px-5 sm:flex">
               <button
                 class="rounded-full border px-3 py-3 text-sm font-bold hover:bg-secondary"
               >
@@ -174,11 +174,11 @@
           </div>
         </div>
 
-        <div class="flex w-full flex-1 p-5">
+        <div class="flex w-full flex-1 gap-5 p-5">
           <div class="flex w-full flex-col gap-5 xl:flex-row">
             <div class="flex-1 space-y-5">
               <div class="flex items-center justify-between">
-                <h3 class="text-lg font-bold">Latest Statistics</h3>
+                <h3 class="font-bold md:text-lg">Latest Statistics</h3>
                 <button
                   class="flex items-center gap-5 rounded-xl border px-3 py-2 text-sm font-bold hover:bg-secondary"
                 >
@@ -190,7 +190,7 @@
                 </button>
               </div>
 
-              <div class="grid grid-cols-2 gap-5 xl:grid-cols-3">
+              <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                 <div class="space-y-5 rounded-2xl border bg-secondary p-5">
                   <div class="flex items-center gap-3">
                     <span class="rounded-full bg-info p-3">
